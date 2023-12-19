@@ -1,0 +1,17 @@
+:root {
+  --Dark-Navy: #131736;
+  --Pink--Text: #9972ff;
+  --Light-Indigo: #303665;
+  --VIS--Green: #02e7b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+}

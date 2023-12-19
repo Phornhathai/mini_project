@@ -1,0 +1,89 @@
+@import "../../style/global.scss";
+
+.menu {
+  width: 125px;
+  height: 100vh;
+  background-color: var(--Dark-Navy);
+  font-size: 15px;
+  line-height: 15px;
+
+  .logo {
+    width: 125px;
+    height: 125px;
+    background-color: var(--Dark-Navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .account {
+    width: 125px;
+    height: 75px;
+    background-color: var(--Dark-Navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .iconNotification {
+      display: flex;
+      justify-content: space-between;
+      width: 66px;
+      height: 16px;
+      margin: 5px;
+    }
+  }
+
+  .search {
+    height: 48px;
+    width: 125px;
+    position: relative;
+
+    label {
+      position: absolute;
+      background-color: var(--Dark-Navy);
+      padding: 0px 7px;
+      color: var(--Pink--Text);
+      top: -8px;
+      left: 5px;
+    }
+    input {
+      border: 1px var(--VIS--Green) solid;
+      width: 124px;
+      height: 48px;
+      background-color: var(--Dark-Navy);
+      border-radius: 5px;
+    }
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 562px;
+
+    .listItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100px;
+      height: 94px;
+      justify-content: center;
+      background-color: var(--Light-Indigo);
+      border-radius: 10px;
+      margin: 10px;
+    }
+    .listItemTitle {
+      padding: 5px;
+    }
+  }
+
+  a {
+    color: var(--Pink--Text);
+    text-decoration: none;
+
+    &:visited {
+      color: var(--Pink--Text);
+    }
+  }
+}
