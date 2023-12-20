@@ -1,0 +1,8 @@
+@import "../../style/global.scss";
+
+.home {
+  width: calc(100vw - 125px);
+  height: 100vh;
+  background-color: var(--Dark-Navy);
+  background-image: url("../../../public/pattern_background.svg");
+}

@@ -1,0 +1,40 @@
+@import "../../src/style/global.scss";
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Dark-Navy);
+  color: var(--Pink--Text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loginInfo {
+    background-color: var(--Light-Indigo);
+    border-radius: 10px;
+
+    form {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: white;
+    }
+  }
+}
