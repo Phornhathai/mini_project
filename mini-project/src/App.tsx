@@ -6,9 +6,8 @@ import Payslips from "./pages/payslips/Payslips";
 import Reports from "./pages/reports/Reports";
 import Menu from "./components/menu/Menu";
 import Login from "./login/Login";
+
 import "./style/global.scss";
-import { useAuth } from "./useAuth";
-import { AuthContext } from "./AuthContext";
 
 function App() {
   const Layout = () => {
@@ -55,6 +54,10 @@ function App() {
         {
           path: "/login",
           element: <Login />,
+        },
+        {
+          path: "/register",
+          element: <Register />,
         },
       ],
     },
