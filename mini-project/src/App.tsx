@@ -7,7 +7,8 @@ import Reports from "./pages/reports/Reports";
 import Menu from "./components/menu/Menu";
 import Login from "./login/Login";
 import "./style/global.scss";
-import { useState } from "react";
+import { useAuth } from "./useAuth";
+import { AuthContext } from "./AuthContext";
 
 function App() {
   const Layout = () => {
@@ -24,15 +25,6 @@ function App() {
       </div>
     );
   };
-
-  //using the useState Hook to store the token in memory
-  const [token, setToken] = useState();
-  //import the Login component. Add a conditional statement to display Login.
-  //if token is falsy. pass the setToken function to the Login component:
-
-  if (!token) {
-    return <Login setToken={setToken} />;
-  }
 
   // Menu on main page of react router
   const router = createBrowserRouter([
