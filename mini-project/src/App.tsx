@@ -5,9 +5,10 @@ import Companies from "./pages/companies/Companies";
 import Payslips from "./pages/payslips/Payslips";
 import Reports from "./pages/reports/Reports";
 import Menu from "./components/menu/Menu";
-import Login from "./login/Login";
+import Login from "./pages/login/Login";
 
 import "./style/global.scss";
+import Register from "./pages/register/Register";
 
 function App() {
   const Layout = () => {
@@ -61,24 +62,9 @@ function App() {
         },
       ],
     },
-    // {
-    //   // create login layout
-    //   path: "/login",
-    //   element: <Login />,
-    // },
   ]);
 
   return <RouterProvider router={router} />;
 }
-
-//   return <>
-//   <Home />
-//   <Audit />
-//   <Companies />
-//   <Payslips />
-//   <Reports />
-
-//   </>
-// }
 
 export default App;

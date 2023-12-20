@@ -1,4 +1,4 @@
-@import "../../src/style/global.scss";
+@import "../../style/global.scss";
 
 .login {
   width: 100vw;
@@ -6,9 +6,14 @@
   background-color: var(--Dark-Navy);
   color: var(--Pink--Text);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  h2 {
+    text-align: center;
+    margin: 20px;
+  }
   .loginInfo {
     background-color: var(--Light-Indigo);
     border-radius: 10px;
@@ -36,6 +41,9 @@
       border-radius: 10px;
       background-color: white;
       cursor: pointer;
+    }
+    .error-message {
+      margin: 10px;
     }
   }
 }
