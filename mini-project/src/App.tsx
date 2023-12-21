@@ -1,4 +1,10 @@
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  useNavigate,
+  Navigate,
+} from "react-router-dom";
 import Home from "./pages/home/Home";
 import Audit from "./pages/audit/Audit";
 import Companies from "./pages/companies/Companies";
@@ -52,15 +58,15 @@ function App() {
           path: "/reports",
           element: <Reports />,
         },
-        {
-          path: "/login",
-          element: <Login />,
-        },
-        {
-          path: "/register",
-          element: <Register />,
-        },
       ],
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
     },
   ]);
 

@@ -4,5 +4,44 @@
   width: calc(100vw - 125px);
   height: 100vh;
   background-color: var(--Dark-Navy);
-  background-image: url("../../../public/pattern_background.svg");
+  color: var(--Pink--Text);
+  display: flex;
+  background-image: url(../../../public/pattern_background.svg);
+
+  .userInfo {
+    margin: 40px;
+    justify-content: flex-start;
+    background-color: var(--Light-Indigo);
+    width: 500px;
+    height: max-content;
+
+    button {
+      width: 100px;
+      height: 40px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+
+  .detailInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    .leftInfo {
+      background-color: var(--Light-Indigo);
+      width: 500px;
+      height: 500px;
+      margin-right: 50px;
+    }
+
+    .rightInfo {
+      background-color: var(--Light-Indigo);
+      width: 500px;
+      height: 500px;
+    }
+  }
 }

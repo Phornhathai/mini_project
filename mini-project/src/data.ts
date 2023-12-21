@@ -26,12 +26,6 @@ export const menu = [
         url: "/reports",
         icon: "reports.svg",
       },
-      {
-        id: 5,
-        title: "Login",
-        url: "/login",
-        icon: "login.svg",
-      },
     ],
   },
 ];

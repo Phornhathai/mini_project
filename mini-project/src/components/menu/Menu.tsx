@@ -6,7 +6,9 @@ const Menu = () => {
   return (
     <div className="menu">
       <div className="logo">
-        <img src="./public/logo.svg" alt="logo" />
+        <Link to="/register">
+          <img src="./public/logo.svg" alt="logo" />
+        </Link>
       </div>
       <div className="account">
         <div className="profile">
