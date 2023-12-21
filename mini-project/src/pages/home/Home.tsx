@@ -42,7 +42,7 @@ const Home = () => {
       {/* create left box for showing information */}
       <div className="userInfo">
         {user && (
-          <div>
+          <div className="loginDetail">
             <p>Email : {user.email}</p>
             <p>Uid : {user.uid}</p>
             <p>Display Name : {user.displayName}</p>
@@ -50,13 +50,19 @@ const Home = () => {
             <button type="submit">Logout</button>
           </div>
         )}
-        <div className="fileUpload">
-          <FileUpload />
-        </div>
       </div>
-      <div className="detailInfo">
-        <div className="leftInfo"></div>
-        <div className="rightInfo"></div>
+      <div className="Info">
+        <div className="detailInfo">
+          <div className="leftInfo">
+            <div className="cardTop">
+              <div className="fileUpload">
+                <FileUpload />
+              </div>
+            </div>
+            <div className="cardBottom"></div>
+          </div>
+          <div className="rightInfo"></div>
+        </div>
       </div>
     </form>
   );

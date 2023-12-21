@@ -5,15 +5,20 @@
   height: 100vh;
   background-color: var(--Dark-Navy);
   color: var(--Pink--Text);
-  display: flex;
   background-image: url(../../../public/pattern_background.svg);
 
+  .Info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .userInfo {
-    margin: 40px;
-    justify-content: flex-start;
     background-color: var(--Light-Indigo);
     width: 500px;
     height: max-content;
+    justify-content: flex-start;
+    background-color: aqua;
+    left: 10px;
 
     button {
       width: 100px;
@@ -27,21 +32,38 @@
 
   .detailInfo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+    width: 1200px;
+    background-color: red;
+    height: 600px;
 
     .leftInfo {
-      background-color: var(--Light-Indigo);
-      width: 500px;
-      height: 500px;
-      margin-right: 50px;
+      width: 490px;
+      height: 522px;
+      margin-right: 80px;
+
+      .cardTop {
+        background-color: var(--Light-Indigo);
+        border-radius: 24px;
+        width: 550px;
+        height: 260px;
+        margin: 22px;
+      }
+      .cardBottom {
+        margin: 22px;
+        background-color: var(--Light-Indigo);
+        border-radius: 24px;
+        width: 550px;
+        height: 260px;
+      }
     }
 
     .rightInfo {
       background-color: var(--Light-Indigo);
-      width: 500px;
-      height: 500px;
+      width: 600px;
+      height: 544px;
+      padding: 10px;
+      margin: 22px;
+      border-radius: 24px;
     }
   }
 }
