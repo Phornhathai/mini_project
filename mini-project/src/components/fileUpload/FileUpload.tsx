@@ -10,7 +10,9 @@ const FileUpload = () => {
       const reader = new FileReader();
       reader.onloadend = () => {
         const result = reader.result as string;
-        setBase64String(result);
+        //ใช้ split แต่ละค่าด้วย , แล้วเลือกค่าสุดท้ายออกมาด้วย pop()
+        const resultArray = result.split(",").pop() || null;
+        setBase64String(resultArray);
       };
       reader.readAsDataURL(file);
     }

@@ -1,10 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-  useNavigate,
-  Navigate,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Audit from "./pages/audit/Audit";
 import Companies from "./pages/companies/Companies";
@@ -12,8 +6,6 @@ import Payslips from "./pages/payslips/Payslips";
 import Reports from "./pages/reports/Reports";
 import Menu from "./components/menu/Menu";
 import Login from "./pages/login/Login";
-
-import "./style/global.scss";
 import Register from "./pages/register/Register";
 
 function App() {

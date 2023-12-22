@@ -1,11 +1,7 @@
-import './audit.scss'
+import "./audit.scss";
 
 const Audit = () => {
-  return (
-    <div className="audit">
-        audit page
-    </div>
-  )
-}
+  return <div className="audit">audit page</div>;
+};
 
-export default Audit
+export default Audit;
