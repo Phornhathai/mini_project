@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import "./home.scss";
 import FileUpload from "../../components/fileUpload/FileUpload";
 import ShowPDF from "../../components/showPDF/showPDF";
+import Base64ToPDF from "../../components/ิBase64toPDF/base64ToPDF";
 
 const Home = () => {
   // สร้าง state เพื่อเก็บข้อมูลผู้ใช้ที่ login
@@ -57,12 +58,14 @@ const Home = () => {
           <div className="leftInfo">
             <div className="cardTop">
               <div className="fileUpload">
+                <h1>PDF Upload to base64</h1>
                 <FileUpload />
               </div>
             </div>
             <div className="cardBottom"></div>
           </div>
           <div className="rightInfo">
+            <h1>Show PDF</h1>
             <ShowPDF />
           </div>
         </div>

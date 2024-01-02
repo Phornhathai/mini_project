@@ -5,7 +5,9 @@
   height: 100vh;
   background-color: var(--Dark-Navy);
   color: var(--Pink--Text);
-  background-image: url(../../../public/pattern_background.svg);
+  background-image: url(../../../public/AuditMyPayroll-patternbg-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
 
   .Info {
     display: flex;
