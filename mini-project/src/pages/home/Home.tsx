@@ -4,6 +4,7 @@ import { auth } from "../../libs/firebase";
 import { useEffect, useState } from "react";
 import "./home.scss";
 import FileUpload from "../../components/fileUpload/FileUpload";
+import ShowPDF from "../../components/showPDF/showPDF";
 
 const Home = () => {
   // สร้าง state เพื่อเก็บข้อมูลผู้ใช้ที่ login
@@ -61,7 +62,9 @@ const Home = () => {
             </div>
             <div className="cardBottom"></div>
           </div>
-          <div className="rightInfo"></div>
+          <div className="rightInfo">
+            <ShowPDF />
+          </div>
         </div>
       </div>
     </form>
