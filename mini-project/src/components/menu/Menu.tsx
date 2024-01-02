@@ -24,14 +24,14 @@ const Menu = () => {
 
   return (
     <div className="menu">
-      {/* Top section */}
+      {/* Logo section */}
       <div className="logo">
         <Link to="/register">
           <img src="./public/logo.svg" alt="logo" />
         </Link>
       </div>
       <hr />
-      {/* second section */}
+      {/* Icon section */}
       <div className="account">
         <div className="iconNotification">
           <img
@@ -40,11 +40,10 @@ const Menu = () => {
             className="icon"
           />
           <img src="./public/login.svg" className="profileImg" alt="profile" />
-          {/* <img src="./public/setting_icon.svg" alt="setting" className="icon" /> */}
           <img src="./public/q&a_icon.svg" alt="q&a" className="icon" />
         </div>
       </div>
-      {/* third section */}
+      {/* search & menu section */}
       <div className="listMenu">
         <div className="search">
           <input
@@ -76,6 +75,11 @@ const Menu = () => {
           </div>
         ))}
       </div>
+      <footer>
+        <p>Logged in as: company name</p>
+        <img src="./public/setting_icon.svg" alt="setting" className="icon" />
+        <button>dark theme</button>
+      </footer>
     </div>
   );
 };
