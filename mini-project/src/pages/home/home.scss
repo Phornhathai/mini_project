@@ -1,12 +1,12 @@
 @import "../../style/global.scss";
 
 .home {
-  width: calc(100vw - 125px);
+  width: calc(100vw - 300px);
   height: 100vh;
   background-color: var(--Dark-Navy);
   color: var(--Pink--Text);
   background-image: url(../../../public/AuditMyPayroll-patternbg-pattern.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: right top;
 
   .Info {

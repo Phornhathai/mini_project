@@ -22,6 +22,12 @@ export const menu = [
       },
       {
         id: 4,
+        title: "PAYSLIPS",
+        url: "/payslips",
+        icon: "payslips.svg",
+      },
+      {
+        id: 5,
         title: "REPORTS",
         url: "/reports",
         icon: "reports.svg",

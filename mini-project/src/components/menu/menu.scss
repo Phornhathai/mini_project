@@ -1,27 +1,27 @@
 @import "../../style/global.scss";
 
 .menu {
-  width: 125px;
+  width: 300px;
   height: 100vh;
   background-color: var(--Dark-Navy);
   font-size: 15px;
   line-height: 15px;
 
   .logo {
-    width: 125px;
+    width: 300px;
     height: 125px;
     background-color: var(--Dark-Navy);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .account {
-    width: 125px;
+    width: 300px;
     height: 75px;
     background-color: var(--Dark-Navy);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
@@ -35,57 +35,80 @@
     }
   }
 
-  .search {
-    height: 48px;
-    width: 125px;
-    position: relative;
+  .listMenu {
+    background-color: red;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 20px;
+    margin-right: 5px;
 
-    label {
-      position: absolute;
-      background-color: var(--Dark-Navy);
-      padding: 0px 7px;
-      color: var(--Pink--Text);
-      top: -8px;
-      left: 5px;
-    }
-    input {
-      border: 1px var(--VIS--Green) solid;
-      width: 110px;
-      height: 48px;
-      background-color: var(--Dark-Navy);
-      border-radius: 5px;
-      margin: 5px;
+    .search {
+      width: 300px;
+      position: relative;
+
+      input {
+        width: 300px;
+        height: 40px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: var(--VIS--Green);
+      }
+
+      .searchBTN {
+        position: absolute;
+        left: 265px;
+        top: 2px;
+        img {
+          background-color: #7bebd4;
+          border-radius: 50%;
+          padding: 5px;
+        }
+      }
     }
   }
 
   .item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    height: 562px;
+    height: 600px;
 
     .listItem {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      width: 100px;
-      height: 94px;
-      justify-content: center;
-      background-color: var(--Light-Indigo);
-      border-radius: 10px;
-      margin: 10px;
-    }
-    .listItemTitle {
-      padding: 5px;
+      width: calc(300px - 10px);
+      justify-content: flex-start;
+      background-color: pink;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      margin: 10px 10px 0px 5px;
+
+      &.selected {
+        background-color: #3366cc;
+      }
+
+      .iconImage {
+        margin: 5px;
+        border-radius: 50%;
+        padding: 7px;
+        background-color: rgb(253, 243, 243);
+
+        img {
+          color: var(--Dark-Navy);
+        }
+      }
+
+      .listItemTitle {
+        padding: 5px;
+      }
     }
   }
 
   a {
-    color: var(--Pink--Text);
+    // color: var(--Pink--Text);
+    color: var(--Dark-Navy);
     text-decoration: none;
 
     &:visited {
-      color: var(--Pink--Text);
+      color: var(--Dark-Navy);
     }
   }
 }
