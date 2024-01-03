@@ -16,9 +16,6 @@ const Base64ToPDF = () => {
 
         const pdfDoc = await PDFDocument.load(uint8Array);
 
-        // Do something with the PDFDocument, e.g., save or manipulate it
-        // ...
-
         //Save the PDFDocument to a file
         const pdfBytes = await pdfDoc.save();
         const blob = new Blob([pdfBytes], { type: "application/pdf" });
@@ -51,12 +48,13 @@ const Base64ToPDF = () => {
         cols={40}
         onChange={handleTextAreaChange}
       />
+      <br />
       {iframeSrc && (
         <iframe
           title="pdf-viewer"
           src={iframeSrc}
-          width="fit-content"
-          height="600px"
+          width="1440px"
+          height="1024px"
         />
       )}
     </div>
