@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../libs/firebase";
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import "./home.scss";
 import FileUpload from "../../components/fileUpload/FileUpload";
 import ShowPDF from "../../components/showPDF/showPDF";
 import Base64ToPDF from "../../components/ิBase64toPDF/base64ToPDF";
+import { PDFtobase64 } from "../../services/CommonFunction";
 
 const Home = () => {
   // สร้าง state เพื่อเก็บข้อมูลผู้ใช้ที่ login
@@ -39,6 +40,18 @@ const Home = () => {
     }
   };
 
+  const handlePDFtobase64 = async (e: ChangeEvent<HTMLInputElement>) => {
+    try {
+      const file = e.target.files?.[0];
+      if (file) {
+        const base64Sring = await PDFtobase64(file);
+        console.log(base64Sring);
+      }
+    } catch (error: any) {
+      console.log(error.message);
+    }
+  };
+
   return (
     <form onSubmit={handleLogout} className="home">
       {/* create left box for showing information */}
@@ -54,21 +67,12 @@ const Home = () => {
         )}
       </div>
       <div className="Info">
-        <div className="detailInfo">
-          <div className="leftInfo">
-            <div className="cardTop">
-              <div className="fileUpload">
-                <h1>PDF Upload to base64</h1>
-                <FileUpload />
-              </div>
-            </div>
-            <div className="cardBottom"></div>
-          </div>
-          <div className="rightInfo">
-            <h1>Show PDF</h1>
-            <ShowPDF />
-          </div>
-        </div>
+        <input
+          type="file"
+          name="pdfUpload"
+          id="pdfUpload"
+          onChange={handlePDFtobase64}
+        />
       </div>
     </form>
   );
