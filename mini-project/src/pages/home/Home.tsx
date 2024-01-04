@@ -77,7 +77,7 @@ const Home = () => {
           </div>
         )}
       </div>
-      <div className="">
+      <div className="home">
         <div className="uploadPDFfile">
           <input
             type="file"
